@@ -4,3 +4,4 @@
 This program, based on three types of Hash algorithms, can search for pictures similar to a specified picture in a specified folder through Hamming distance comparison.
 <br/>
 <br/>
+![PixSearch](https://github.com/neroransom/PixSearch/blob/master/sample.png "PixSearch")
