@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1158</width>
+    <height>854</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="font">
+   <font>
+    <family>Adobe 宋体 Std L</family>
+    <pointsize>11</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>相似图片搜索</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">Horizontal Line{
+     border: 1px solid rgb(170, 0, 0);
+
+      background:rgb(153, 255, 226);     
+
+      border-radius: 4px;
+    
+      padding: 2px
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="12" column="6">
+     <widget class="Line" name="line_7">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="10">
+     <widget class="Line" name="line_8">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="16" column="1" colspan="13">
+     <widget class="QLineEdit" name="srcpath">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1" colspan="6">
+     <widget class="Line" name="line_5">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="1" colspan="3">
+     <widget class="QComboBox" name="comboBox">
+      <property name="editable">
+       <bool>false</bool>
+      </property>
+      <item>
+       <property name="text">
+        <string>均值哈希</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>差异哈希</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>感知哈希</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="16" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>源图片路径</string>
+      </property>
+     </widget>
+    </item>
+    <item row="20" column="11">
+     <widget class="QPushButton" name="srcbutton">
+      <property name="text">
+       <string>选择源文件</string>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="8">
+     <widget class="QDoubleSpinBox" name="SpinBox">
+      <property name="decimals">
+       <number>2</number>
+      </property>
+      <property name="stepType">
+       <enum>QAbstractSpinBox::DefaultStepType</enum>
+      </property>
+      <property name="value">
+       <double>84.370000000000005</double>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="9">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>％(or above)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_6">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>源图片：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="20" column="12">
+     <widget class="QPushButton" name="databutton">
+      <property name="text">
+       <string>选择检索路径</string>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="7">
+     <widget class="QLabel" name="label_9">
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="text">
+       <string>相似度</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="7">
+     <widget class="QLabel" name="label_8">
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+
+    
+      padding: 2px
+}</string>
+      </property>
+      <property name="text">
+       <string>相似图片列表：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0" rowspan="3" colspan="6">
+     <widget class="QLabel" name="thumbnail2">
+      <property name="styleSheet">
+       <string notr="true">QLabel
+{
+	border: 2px solid green;
+    background:rgb(227, 244, 233);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="8" colspan="6">
+     <widget class="Line" name="line_6">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" rowspan="3" colspan="6">
+     <widget class="QLabel" name="thumbnail">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel
+{
+	border: 2px solid green;
+    background:rgb(227, 244, 233);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="7" rowspan="7" colspan="7">
+     <widget class="QListWidget" name="listWidget">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="6" rowspan="7">
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="17" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>检索文件夹路径</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0" colspan="14">
+     <widget class="Line" name="line_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="20" column="13">
+     <widget class="QPushButton" name="enterButton">
+      <property name="text">
+       <string>搜索</string>
+      </property>
+     </widget>
+    </item>
+    <item row="20" column="0" colspan="10">
+     <widget class="Line" name="line_4">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_7">
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+
+    
+      padding: 2px
+}</string>
+      </property>
+      <property name="text">
+       <string>所选相似图片：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="17" column="1" colspan="13">
+     <widget class="QLineEdit" name="datapath"/>
+    </item>
+    <item row="12" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>算法</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1" colspan="5">
+     <widget class="Line" name="line_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1158</width>
+     <height>17</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
