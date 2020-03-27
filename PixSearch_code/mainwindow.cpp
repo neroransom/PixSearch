@@ -120,6 +120,10 @@ void MainWindow::aHash(QString src)         //aHash
                  delete[] HashCode2;
                  QListWidgetItem *item = new QListWidgetItem;
                  item->setText(path);
+
+                 QFileInfo info(path);
+                 QFileIconProvider icon_provider;
+                 item->setIcon(icon_provider.icon(info));
                  ui->listWidget->addItem(item);
                  break;
              }
@@ -172,6 +176,9 @@ void MainWindow::dHash(QString src)
                     delete[] HashCode2;
                     QListWidgetItem *item = new QListWidgetItem;
                     item->setText(path);
+                    QFileInfo info(path);
+                    QFileIconProvider icon_provider;
+                    item->setIcon(icon_provider.icon(info));
                     ui->listWidget->addItem(item);
                     break;
                 }
@@ -224,6 +231,9 @@ void MainWindow::pHash(QString src)
                 delete[] HashCode2;
                 QListWidgetItem *item = new QListWidgetItem;
                 item->setText(path);
+                QFileInfo info(path);
+                QFileIconProvider icon_provider;
+                item->setIcon(icon_provider.icon(info));
                 ui->listWidget->addItem(item);
                 break;
             }

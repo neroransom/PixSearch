@@ -9,6 +9,7 @@
 #include <QListWidgetItem>
 #include <QDesktopServices.h>
 #include <QProcess>
+#include <QFileIconProvider>
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
